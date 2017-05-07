@@ -1,0 +1,20 @@
+/* pages/wannianli/wan.wxss */
+.title{
+    color: white;
+    background-color: limegreen;
+    height: 40px;
+    width: 80%;
+    font: 40rpx;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10rpx;
+    border: solid lavenderblush 1rpx;
+    margin: 20rpx;
+}
+.tables{
+    text-align: left
+}
+.tables_detail{
+    margin: 20rpx;
+    color: cadetblue;
+}

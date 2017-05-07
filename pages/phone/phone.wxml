@@ -1,0 +1,17 @@
+<view class="container">
+<view class="classname"> 
+<text>您输入号码是：\n</text>
+<text>{{oldphone}}</text>
+</view>
+  <input class="usualinput" placeholder="请输入手机号码" auto-focus bindinput="showphone" value="{{phone}}"/>
+  <button type="primary" bindtap="bindSearch"> 点击搜索 </button>
+  <view class="classname"> 
+<text>您得到的是：\n</text>
+<view class="" wx:if="{{getphonenumber.result.province}}">省：{{getphonenumber.result.province}}</view>
+<view class="" wx:if="{{getphonenumber.result.city}}">市：{{getphonenumber.result.city}}</view>
+<view class="" wx:if="{{getphonenumber.result.areacode}}">区号：{{getphonenumber.result.areacode}}</view>
+<view class="" wx:if="{{getphonenumber.result.zip}}">邮编：{{getphonenumber.result.zip}}</view>
+<view class="" wx:if="{{getphonenumber.result.company}}">运营商：{{getphonenumber.result.company}}</view>
+<view class="" wx:if="{{getphonenumber.result.card}}">卡类型：{{getphonenumber.result.card}}</view>
+</view>
+</view>

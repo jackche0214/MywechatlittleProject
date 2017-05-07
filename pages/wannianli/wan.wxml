@@ -1,0 +1,32 @@
+<view class="container">
+<view class="title">
+中华万年历</view>
+<view class="tables">
+<view class="tables_detail">
+<text style="color:darkblue"> 禁忌：</text> {{resultdata.result.data.avoid}}
+</view>
+<view class="tables_detail">
+<text style="color:darkblue"> 适宜：</text> {{resultdata.result.data.suit}}
+</view>
+<view class="tables_detail">
+<text style="color:darkblue"> 周几：</text> {{resultdata.result.data.weekday}}
+</view>
+<view class="tables_detail">
+<text style="color:darkblue"> 属相：</text>{{resultdata.result.data.animalsYear}}
+</view>
+<view class="tables_detail">
+<text style="color:darkblue"> 农历：</text>
+农历：{{resultdata.result.data.lunarYear + resultdata.result.data.lunar}}
+</view>
+<view class="tables_detail">
+<text style="color:darkblue"> 新历：</text>{{resultdata.result.data.date}}</view>
+<block wx:if="{{resultdata.result.data.holiday}}"> 
+<view class="tables_detail">
+<text style="color:darkblue"> 假日：</text>{{resultdata.result.data.holiday}}
+</view>
+<view class="tables_detail">
+<text style="color:darkblue"> 假日描述：</text>{{resultdata.result.data.desc}}
+</view>
+</block>
+</view>
+</view>

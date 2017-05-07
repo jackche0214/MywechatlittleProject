@@ -1,0 +1,6 @@
+.usualinput{
+    border: 1rpx cornflowerblue solid;
+    border-radius: 15rpx;
+    margin: 5rpx;
+    height: 100rpx;
+}
