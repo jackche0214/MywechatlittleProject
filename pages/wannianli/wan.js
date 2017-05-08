@@ -6,6 +6,9 @@ Page({
   },
   onLoad:function(times){
     // 生命周期函数--监听页面加载
+     wx.showLoading({
+        title: '获取数据中',
+            })
     var self = this
     times = app.globalData.times
     wx.request({
@@ -14,6 +17,7 @@ Page({
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
       success: function(res){
+         wx.hideLoading()
          wx.showToast({
                             title: '获取数据成功',
                             icon: 'success',
@@ -26,23 +30,16 @@ Page({
       },
       fail: function(res) {
         // fail
+         wx.showToast({
+                            title: '获取失败',
+                            icon: 'fail',
+                            duration: 2000
+                            })
       },
       complete: function(res) {
         // complete
       }
     })
-  },
-  getTime:function(){
-
   }
 })
-function GetTimes(date) {
-  var year = date.getFullYear()
-  var month = date.getMonth() + 1
-  var day = date.getDate()
-  return [year, month, day].map(formatNumber).join('-') 
-}
-function formatNumber(n) {
-  n = n.toString()
-  return n
-}
+

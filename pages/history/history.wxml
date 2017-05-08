@@ -1,0 +1,12 @@
+
+<view class="" wx:key="{{index}}" wx:for="{{result.result}}" bindtap="flodFn">
+<view class="" wx:if="{{isFold}}">
+<view class="showwindows">{{item.title}}</view>
+</view>
+<view class="" wx:else>
+<view class="showwindows">{{item.title}}</view>
+<view class="des">{{item.des}}\n
+<view class="lunar">{{item.lunar}}</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,24 @@
+.showwindows{
+    width: 90%;
+    height: 160rpx;
+    background-color: lightgreen;
+    border-radius: 10rpx;
+    margin: 10rpx;
+    padding: 5rpx;
+    text-align: center;
+    line-height:80rpx; 
+}
+.des{
+     width: 90%;
+    height: 180rpx;
+    background-color: lightblue;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+    margin-top:-10rpx; 
+    padding: 5rpx;
+    text-align: center;
+}
+.lunar{
+  margin-top: 15rpx;
+  color: darkcyan
+}

@@ -16,6 +16,9 @@ Page({
       this.getphone(this.data.oldphone)
   },
   getphone:function(phone){
+     wx.showLoading({
+        title: '获取数据中',
+            })
     var self = this
       wx.request({
         url: 'https://apis.juhe.cn/mobile/get?phone='+phone+'&key=f480ab6e72e62b9b0da763366cc7a499',
@@ -23,6 +26,7 @@ Page({
         method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
         // header: {}, // 设置请求的 header
         success: function(res){
+           wx.hideLoading()
              wx.showToast({
                             title: '获取数据成功',
                             icon: 'success',

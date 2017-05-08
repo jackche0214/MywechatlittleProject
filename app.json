@@ -1,15 +1,17 @@
 {
   "pages":[
+    
     "pages/index/index",
     "pages/wannianli/wan",
     "pages/logs/logs",
-    "pages/phone/phone"
+    "pages/phone/phone",
+    "pages/history/history"
     
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "ccdemo",
     "navigationBarTextStyle":"black"
   }
 }

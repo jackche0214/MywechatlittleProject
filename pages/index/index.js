@@ -33,4 +33,9 @@ Page({
         url: '../wannianli/wan'
       })
   },
+  gethistory:function(){
+    wx.navigateTo({
+      url: '../history/history'
+    })
+  }
 })
