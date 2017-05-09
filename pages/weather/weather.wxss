@@ -10,7 +10,7 @@
 }
 .des{
      width: 90%;
-    height: 300rpx;
+    height: 400rpx;
     background-color: lightblue;
     border-radius: 10rpx;
     margin-left: 10rpx;
