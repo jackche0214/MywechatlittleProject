@@ -37,5 +37,10 @@ Page({
     wx.navigateTo({
       url: '../history/history'
     })
+  },
+  getweather:function(){
+    wx.navigateTo({
+      url: '../weather/weather',
+    })
   }
 })

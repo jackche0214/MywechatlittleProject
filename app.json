@@ -5,8 +5,8 @@
     "pages/wannianli/wan",
     "pages/logs/logs",
     "pages/phone/phone",
-    "pages/history/history"
-    
+    "pages/history/history",
+    "pages/weather/weather"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -7,6 +7,7 @@
  <view class="">
  <button type="primary" bindtap="getphone"> 查询号码归属地</button>
  <button type="primary" bindtap="getwannianli"> 查看万年历</button>
+   <button type="primary" bindtap="getweather"> 查询天气</button>
   <button type="primary" bindtap="gethistory"> 查看历史上的今天</button>
  </view>
 </view>

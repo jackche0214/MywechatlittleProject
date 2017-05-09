@@ -1,0 +1,28 @@
+<view class="classname">
+经纬度{{}}
+</view>
+<view class="classname" wx:key="{{index}}" wx:for="{{[0,1,2,3,4]}}">
+<view class="showwindows">
+{{result.coldRisk[index].datetime}}
+</view>
+<view class="des">
+<view class="classname">天气概况
+：{{result.skycon[index].value}}</view>
+<view class="classname">感冒率：{{result.coldRisk[index].desc}}</view>
+<view class="classname">平均温度:{{result.temperature[index].avg}} 最大温度:{{result.temperature[index].max}} 最小温度：{{result.temperature[index].min}} </view>
+<view class="classname" >洗车情况
+：{{result.carWashing[index].desc}}</view>
+<view class="classname" >紫外线强度
+：{{result.ultraviolet[index].desc}}</view>
+<view class="classname" >pm25
+：{{result.pm25[index].avg}}</view>
+<view class="classname" >日出
+：{{result.astro[index].sunset.time}} 日落
+：{{result.astro[index].sunrise.time}}</view>
+<view class="classname" >穿衣适宜度
+：{{result.dressing[index].desc}}</view>
+
+
+</view>
+</view>
+

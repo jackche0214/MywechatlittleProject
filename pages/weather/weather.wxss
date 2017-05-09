@@ -1,0 +1,21 @@
+.showwindows{
+    width: 90%;
+    height: 80rpx;
+    background-color: lightgreen;
+    border-radius: 10rpx;
+    margin: 10rpx;
+    padding: 5rpx;
+    text-align: center;
+    line-height:80rpx; 
+}
+.des{
+     width: 90%;
+    height: 300rpx;
+    background-color: lightblue;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+    margin-top:-10rpx; 
+    padding: 5rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
